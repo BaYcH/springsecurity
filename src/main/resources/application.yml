@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springsecurity
+  profiles:
+    include: application-redis.yml
+  thymeleaf:
+    suffix: .html
+    cache: false
+    prefix: classpath:/templates/
+  mvc:
+    throw-exception-if-no-handler-found: true
